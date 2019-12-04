@@ -1,3 +1,10 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+home: #le nom de chemin
+  path: /home
+  controller: App\Controller\HomeController::index    #la methode a appeller dans le controller
+projets: #le nom de chemin
+  path: /projets
+  controller: App\Controller\ProjetsController::index
+

@@ -15,4 +15,5 @@ Une fois cloné en local, se déplacer dans la racine du projet puis :
 Et ensuite pour travailler : 
 
 * `./bin/console s:r` ou `./bin/console server:run`, démarre un serveur web local de développement 
-* `yarn watch`, exécute en continu 'encore' qui agrège les js et styles
+h`, exécute en continu 'encore' qui agrège les js et styles* `yarn watch
+ *php recommandé ¨7.3.0 pour le webpack
