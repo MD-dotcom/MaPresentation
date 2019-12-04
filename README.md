@@ -17,3 +17,5 @@ Et ensuite pour travailler :
 * `./bin/console s:r` ou `./bin/console server:run`, démarre un serveur web local de développement 
 h`, exécute en continu 'encore' qui agrège les js et styles* `yarn watch
  *php recommandé ¨7.3.0 pour le webpack
+*Installer la doctrine "composer require symfony/orm-pack"
+*Créer une classe d'entité: "php bin/console make:entity"
