@@ -20,4 +20,5 @@ h`, exécute en continu 'encore' qui agrège les js et styles* `yarn watch
 *Installer la doctrine "composer require symfony/orm-pack"
 *Créer une classe d'entité: "php bin/console make:entity"
 *Installer la dependance fixture pour pouvoir prendre facilement en charge l'ORM "composer require --dev orm-fixtures"
-*
+*creation des objets dans le fixture et les envoyer à la db avec " php bin/console doctrine:fixtures:load"
+*utiliser l'interpellation {{}}  dans le template pour recuperer des données de la db pour la vue.

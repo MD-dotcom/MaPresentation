@@ -4,41 +4,24 @@
 {% block title %}Hello HomeController!{% endblock %}
 
 {% block body %}
-    {% for projet in projet %}
+
 <style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
+    <div class="example-wrapper">
+        <h4>Mes projets realisés au cours de mon master sont:</h4>
 
+    </div>
+    {% for projet in projet %}
 
     <div class="example-wrapper">
 
-        <h4>Mes projets realisés au cours de mon master sont:</h4>
-
-
     <div class="alert alert-primary" role="alert">
 
-        trouver mon Tp de symfony <a href="https://github.com/MD-dotcom/tp2.git" class="alert-link">ici</a>
-        <li>son intitlé: {{ projet.nom }}</li>
-        <li>technologie utilisée: {{ projet.technologieUtilisee }}</li>
-        <li>courte description: {{ projet.description }}</li>
-
-    </div>
 
 
-    <div class="alert alert-secondary" role="alert">
-
-        trouver mon projet angular <a href="#" class="alert-link">ici</a>
-        <li>son intitlé: {{ projet.nom }}</li>
-        <li>technologie utilisée: {{ projet.technologieUtilisee }}</li>
-        <li>courte description: {{ projet.description }}</li>
-
-    </div>
-
-
-    <div class="alert alert-success" role="alert">
-
-        trouver mon projet JEE spring boot <a href="#" class="alert-link">ici</a>
+        <li> trouver mon {{ projet.nom }} <a href="{{ projet.lien }}" class="alert-link">ici</a></li>
         <li>son intitlé: {{ projet.nom }}</li>
         <li>technologie utilisée: {{ projet.technologieUtilisee }}</li>
         <li>courte description: {{ projet.description }}</li>
@@ -46,7 +29,6 @@
     </div>
 
     </div>
-
 {% endfor %}
     {% endblock %}
 

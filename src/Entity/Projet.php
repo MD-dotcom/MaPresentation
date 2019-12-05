@@ -30,6 +30,11 @@ class Projet
      * @ORM\Column(type="text")
      */
     private $description;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $lien;
 //on cree un constructeur qui va etre generer a chaque instanciation de l'entité projet
     public function __construct()
     {
@@ -73,6 +78,17 @@ class Projet
     public function setDescription(string $description): self
     {
         $this->description = $description;
+
+        return $this;
+    }
+    public function getLien(): ?string
+    {
+        return $this->lien;
+    }
+
+    public function setLien(string $lien): self
+    {
+        $this->nom = $lien;
 
         return $this;
     }
