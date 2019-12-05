@@ -7,7 +7,7 @@
 // '@media (min-width: 992px)' est une media query écrite en SCSS
 // SI la taille de l'écran dépasse les 992px ALORS les règles inscrites
 // dans le fichier desktop/global.scss sont utilisées
-@media (min-width: 992px) {
+@media (min-width: 700px) {
     // le langague SCSS importe automatiquement 'desktop/global' MAIS :
     // va automatiquement ajouter la règle de la media query devant les
     // règles définis dans 'desktop/global'

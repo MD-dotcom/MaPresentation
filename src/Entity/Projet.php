@@ -30,6 +30,11 @@ class Projet
      * @ORM\Column(type="text")
      */
     private $description;
+//on cree un constructeur qui va etre generer a chaque instanciation de l'entité projet
+    public function __construct()
+    {
+        $this->created_at = new \DateTime();
+    }
 
     public function getId(): ?int
     {
