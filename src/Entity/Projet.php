@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Entity;
-
+#https://www.youtube.com/watch?v=1QvHMtOt97I
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -32,9 +32,10 @@ class Projet
     private $description;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $lien;
+
 //on cree un constructeur qui va etre generer a chaque instanciation de l'entité projet
     public function __construct()
     {
@@ -73,6 +74,7 @@ class Projet
     public function getDescription(): ?string
     {
         return $this->description;
+
     }
 
     public function setDescription(string $description): self
@@ -81,15 +83,18 @@ class Projet
 
         return $this;
     }
+
     public function getLien(): ?string
     {
         return $this->lien;
     }
 
-    public function setLien(string $lien): self
+    public function setLien(?string $lien): self
     {
-        $this->nom = $lien;
+        $this->lien = $lien;
 
         return $this;
     }
+
+
 }
