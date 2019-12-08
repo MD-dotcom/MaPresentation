@@ -7,6 +7,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class HomeController extends AbstractController
 {
+    //on specifier l'url qui appel le template indiqué dans la methode render
     /**
      * @Route("/home", name="home")
      */

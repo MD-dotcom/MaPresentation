@@ -13,14 +13,14 @@
         <h4>Mes projets realisés au cours de mon master sont:</h4>
 
     </div>
-    {% for projet in projet %}
+    {% for projet in projet %} <!--la boucle pour eterer la liste des projets dans la db-->
 
     <div class="example-wrapper">
 
     <div class="alert alert-primary" role="alert">
 
 
-
+<!--ici on utilise l'appelation pour recuperer des données de la db, on a un template dynamique-->
         <li> trouver mon {{ projet.nom }} <a href="{{ projet.lien }}" class="alert-link">ici</a></li>
         <li>son intitlé: {{ projet.nom }}</li>
         <li>technologie utilisée: {{ projet.technologieUtilisee }}</li>
